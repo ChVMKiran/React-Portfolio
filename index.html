@@ -2,68 +2,287 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+
+        <!-- Favicon -->
         <link
             rel="icon"
-            type="image/svg+xml"
-            href="./hero.jpg"
+            type="image/jpeg"
+            href="/hero.jpg"
         />
+
+        <!-- Viewport -->
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
         />
-        <meta 
-            name="google-site-verification" 
-            content="F_qVFs1dAcrYu1VEa8pCRjtKslVMUNX7tq7H4qGuUQc" 
+
+        <!-- Google Search Console Verification -->
+        <meta
+            name="google-site-verification"
+            content="F_qVFs1dAcrYu1VEa8pCRjtKslVMUNX7tq7H4qGuUQc"
         />
+
+        <!-- Primary SEO -->
+        <title>Ch V M Kiran | Python Developer & Computer Science Student</title>
+
         <meta
             name="description"
-            content="Portfolio of Ch V M Kiran, showcasing my projects, skills, and experience."
+            content="Ch V M Kiran's portfolio — Python Developer and Computer Science student showcasing software development, machine learning, full-stack projects, skills, and experience."
         />
-        <title>Ch V M Kiran - Portfolio</title>
+
+        <meta
+            name="author"
+            content="Ch V M Kiran"
+        />
+
+        <meta
+            name="robots"
+            content="index, follow"
+        />
+
+        <!-- Canonical URL -->
+        <link
+            rel="canonical"
+            href="https://chvmkiran.me/"
+        />
+
+        <!-- Open Graph / Social Sharing -->
+        <meta
+            property="og:type"
+            content="website"
+        />
+
+        <meta
+            property="og:title"
+            content="Ch V M Kiran | Python Developer & Computer Science Student"
+        />
+
+        <meta
+            property="og:description"
+            content="Portfolio of Ch V M Kiran, showcasing software development, machine learning, full-stack projects, skills, and experience."
+        />
+
+        <meta
+            property="og:url"
+            content="https://chvmkiran.me/"
+        />
+
+        <meta
+            property="og:image"
+            content="https://chvmkiran.me/hero.jpg"
+        />
+
+        <meta
+            property="og:site_name"
+            content="Ch V M Kiran"
+        />
+
+        <!-- Twitter / X Card -->
+        <meta
+            name="twitter:card"
+            content="summary_large_image"
+        />
+
+        <meta
+            name="twitter:title"
+            content="Ch V M Kiran | Python Developer & Computer Science Student"
+        />
+
+        <meta
+            name="twitter:description"
+            content="Portfolio of Ch V M Kiran, showcasing software development, machine learning, full-stack projects, skills, and experience."
+        />
+
+        <meta
+            name="twitter:image"
+            content="https://chvmkiran.me/hero.jpg"
+        />
+
+        <!-- Structured Data: Profile Page -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfilePage",
+            "@id": "https://chvmkiran.me/#profile",
+            "url": "https://chvmkiran.me/",
+            "name": "Ch V M Kiran | Portfolio",
+            "description": "Portfolio of Ch V M Kiran, showcasing software development, machine learning, full-stack projects, skills, and experience.",
+            "mainEntity": {
+                "@type": "Person",
+                "@id": "https://chvmkiran.me/#person",
+                "name": "Ch V M Kiran",
+                "url": "https://chvmkiran.me/",
+                "image": "https://chvmkiran.me/hero.jpg",
+                "jobTitle": "Python Developer",
+                "sameAs": [
+                    "https://www.linkedin.com/in/ch-v-m-kiran-596213291/",
+                    "https://github.com/ChVMKiran/",
+                    "https://leetcode.com/u/VENKATA_MANIKANTA_KIRAN_CH",
+                    "https://codeforces.com/profile/chvmkiran"
+                ]
+            }
+        }
+        </script>
+
+        <!-- Performance: Google Fonts -->
         <link
             rel="preconnect"
             href="https://fonts.googleapis.com"
         />
+
         <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
             crossorigin
         />
+
         <link
             href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
             rel="stylesheet"
         />
+
+        <!-- Font Awesome -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         />
+
+        <!-- Basic Global Styles -->
         <style>
             * {
                 font-family: cursive;
                 scrollbar-color: #008ead #02023099;
             }
-            body {
-                margin: auto;
-                padding: 0;
-                color: lightgray;
-                /* font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal; */
-                position: relative;
-                background-color: black;
-                position: relative;
-                overflow-x: hidden;
-            }
+
             html {
                 scroll-behavior: smooth;
                 scroll-padding-top: 10%;
             }
+
+            body {
+                margin: auto;
+                padding: 0;
+                color: lightgray;
+                background-color: black;
+                position: relative;
+                overflow-x: hidden;
+            }
+
+            /*
+             * Fallback content for search engines and users
+             * when JavaScript is unavailable.
+             *
+             * React will render the actual portfolio into #root.
+             */
+            .seo-content {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 40px 20px;
+            }
+
+            .seo-content h1 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .seo-content h2 {
+                margin-top: 2rem;
+            }
+
+            .seo-content p {
+                line-height: 1.7;
+            }
+
+            /*
+             * Once React loads, the actual application replaces
+             * the fallback content.
+             */
+            #root:empty + .seo-content {
+                display: block;
+            }
+
+            #root:not(:empty) + .seo-content {
+                display: none;
+            }
         </style>
-      <script type="module" crossorigin src="./assets/index-L4CBjmqM.js"></script>
-      <link rel="stylesheet" crossorigin href="./assets/index-DV9xYnCn.css">
     </head>
+
     <body>
-        <h1 style="position:absolute; left:-9999px;">Ch V M Kiran</h1>
+
+        <!--
+            Main React application
+        -->
         <div id="root"></div>
+
+        <!--
+            SEO fallback content.
+
+            This gives crawlers and users without JavaScript
+            meaningful semantic information about the website.
+        -->
+        <main class="seo-content">
+
+            <h1>Ch V M Kiran</h1>
+
+            <p>
+                I'm Ch V M Kiran, a Python Developer and Computer Science
+                student interested in software development, machine learning,
+                full-stack development, and problem solving.
+            </p>
+
+            <section>
+                <h2>About Ch V M Kiran</h2>
+
+                <p>
+                    This is the personal portfolio of Ch V M Kiran,
+                    showcasing software projects, technical skills,
+                    development experience, and achievements.
+                </p>
+            </section>
+
+            <section>
+                <h2>Projects</h2>
+
+                <p>
+                    Explore projects developed by Ch V M Kiran across
+                    Python development, machine learning, full-stack
+                    development, and other areas of software engineering.
+                </p>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+
+                <p>
+                    Python, JavaScript, React, Node.js, machine learning,
+                    data structures and algorithms, REST APIs, FastAPI,
+                    AWS, Docker, and web development.
+                </p>
+            </section>
+
+            <section>
+                <h2>Profiles</h2>
+
+                <p>
+                    Find Ch V M Kiran on professional and coding platforms
+                    through the links available on this portfolio.
+                </p>
+            </section>
+
+        </main>
+
+        <!-- React application -->
+        <script
+            type="module"
+            crossorigin
+            src="./assets/index-L4CBjmqM.js"
+        ></script>
+
+        <link
+            rel="stylesheet"
+            crossorigin
+            href="./assets/index-DV9xYnCn.css"
+        />
+
     </body>
 </html>
